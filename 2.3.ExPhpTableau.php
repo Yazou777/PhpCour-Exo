@@ -71,7 +71,7 @@
  
     $nb = count($capitales);
 
-    echo "Le tableau contient ".$nb." Pays.";
+    echo "Le tableau contient ".$nb." Pays      .";
 
     ?>
 </body>
