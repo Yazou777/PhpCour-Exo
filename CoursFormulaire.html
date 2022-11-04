@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Récupération des données
+
+    Si les données HTML sont transmises avec la méthode GET, dans votre script PHP vous utilisez: $_GET ou $_REQUEST
+    Si les données HTML sont transmises avec la méthode POST, dans votre script PHP vous utilisez: $_POST ou $_REQUEST
+ -->
+    <form action="script.php" method="post"> 
+        Nom : <input type="text" name="nom" size="20" maxlength="40" /> <br /> 
+        Prenom : <input type="text" name="prenom" size="20" maxlength=40 /> 
+        <input type="submit" value="ENVOYER" /> 
+      </form> 
+
+      <!-- Transmettre des champs de formulaire sous la forme d'un tableau
+      Vous remarquerez que nous passons en fait un tableau Fjour[] pour rassembler l'ensemble des valeurs possibles des différentes cases à cocher. -->
+
+    <form action ="check.php" method="post"> 
+        Tu utilises internet plutôt le :<br /> 
+        <input type="checkbox" name="Fjour[]" value="Lundi" />Lundi<br />
+        <input type="checkbox" name="Fjour[]" value="Mardi" />Mardi<br />
+        <input type="checkbox" name="Fjour[]" value="Mercredi" />Mercredi<br />
+        <input type="checkbox" name="Fjour[]" value="Jeudi" />Jeudi<br />
+        <input type="checkbox" name="Fjour[]" value="Vendredi" />Vendredi<br />
+        <input type="submit" name="Envoyer" value="ENVOYER" /> 
+    </form> 
+
+    <!-- L'utilisation du type "hidden" permet de passer des variables discrètement, sans qu'elles soient affichées à l'écran, mais elles sont visibles dans le code. (f12 inspecteur)-->
+    <form action="page.php" method="post">
+        Votre e-mail : <input type="text" name="email" />
+        <input type="hidden" name="secret" value="texte à passer discrètement" />
+        <input type="submit" value="OK" />
+    </form> 
+
+</body>
+</html>
