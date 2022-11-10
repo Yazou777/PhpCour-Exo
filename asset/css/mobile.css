@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) 
+{ 
+    html {
+        font-size: 0.5rem;
+        
+   }
+   
+    aside {
+        display: none;
+        
+    }
+
+    li {
+        display: block;
+        
+    }
+    
+    #accueil {
+       
+        border-bottom: solid  rgb(160, 157, 157);
+        padding-bottom: 5px;
+        margin:  5px 0 5px 0;
+       
+     }
+
+     section {
+        display: block;
+        width: 100%;
+     }
+
+ 
+} 

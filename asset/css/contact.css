@@ -1,0 +1,42 @@
+li {
+    display: inline;
+        }
+
+nav {
+    
+    background-color: black;
+    padding: 5px;
+    margin-bottom: 5px
+    
+   
+     }
+
+ nav a {
+    color:white
+ }    
+ header{
+    display: flex;
+}
+header h1{
+    margin: auto;
+}
+footer {
+    background-color: black;
+    padding: 5px;
+    margin-top: 5px;
+    
+ 
+    
+}
+
+footer a {
+    color: white;
+    
+}
+
+#vq {
+    display:flex;
+}
+.vq {
+    line-height: 3rem;
+}

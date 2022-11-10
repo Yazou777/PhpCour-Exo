@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/FORMULAIRE.css" >
+    <title>Nous contacter</title>
+</head>
+<body>
+    
+    <section>
+          <h1 id="contact">Vos coordonnées :  </h1>
+        
+            <article>
+                <div class="etoile">*</div> <div id=obligatoire> Ces zones sont obligatoires pour envoyer le formulaire.</div> 
+            <form action="monscript.php" method="post" name="form1" onSubmit="return checkForm(this);"> 
+
+
+
+                        <div class="alignement">
+                                    <label for="societe">Société :</label>
+                                    <input type="text" name="societe" id="societe" value="" required title="case obligatoire" > 
+                                    <div class="etoile">*</div> 
+                        </div>
+
+
+                        <div class="alignement">
+                                    <label for="pac">Personne à contacter :</label>
+                                    <input type="text" name="pac" id="pac" required title="case obligatoire"> 
+                                    <div class="etoile">*</div>
+                        </div>
+
+
+                         <div class="alignement">
+                                     <label for="votrequestion" class="center">Adresse de l'entreprise :</label>
+                                     <textarea id=adress name="ad" rows="2" cols="20" ></textarea>
+                        </div>
+
+
+                         <div class="alignement">
+                                    <label for="cp">Code Postal :</label>
+                                    <input type="text" name="cp" id="cp" required title="case obligatoire" >
+                                    <div class="etoile">*</div>
+                        </div>
+
+                        
+                         <div class="alignement">
+                                     <label for="ville">Ville :</label>
+                                     <input type="text" name="ville" id="ville" value="" required title="case obligatoire">
+                                     <div class="etoile">*</div>
+                        </div>
+
+
+                         <div class="alignement">
+                                     <label for="?">E-mail :</label>
+                                     <input type="email" name="email"  required title="case obligatoire" >
+                                     <div class="etoile">*</div> <br>
+                        </div>
+
+
+                         <div class="alignement">
+                                     <label for="adresse">Téléphone :</label>
+                                     <input type="tel" pattern="[0-9]{10}" name="phone" id="adresse"> <br>
+                        </div>
+
+         <div class=area>
+                         <div   id="menu" >
+                                    <label for="ddn" id="projet" >Sélectionnez l'environnement technique du projet :</label>
+                                    <p></p>
+                 
+                       <select id="pro" class=menu >
+                            <option value="" id="optS" selected >Choissisez</option>
+                            <option class="choix" value="Access">Access</option>
+                            <option value="java">Java</option>
+                            <option value="Delphi">Delphi</option>
+                            <option value="Windev">Windev</option>
+                            <option value="Visual basic">Visual Basic</option>
+                            <option value="Power Builder">Power Builder</option>
+                            <option value="Internet">Internet</option>
+                            <option value="Intranet">Intranet</option>
+                            <option value="Windows NT">Windows NT</option>
+                            <option value="Unix">Unix</option>
+                            <option value="SQL Server">SQL Server</option>
+                            <option value="Oracle">Oracle</option>
+                            <option value="Autres...">Autres...</option>
+                       </select>
+                    </div>
+
+                    <textarea id="tech" name="commentaire" rows="2" cols="20"  ></textarea>
+         </div>
+                       <p></p>
+
+
+                       <div class="fin">
+                       <button class="bouton" type="submit">Envoyer</button> <button class="bouton" type="submit">Effacer</button>
+                       </div>
+                      
+            
+                      
+                 
+             </article>
+                
+            
+            
+            
+             </form>
+    </section>
+    </article>
+</section>
+    <script src="asset/js/FORMULAIRE.js"></script>
+</body>
+</html>

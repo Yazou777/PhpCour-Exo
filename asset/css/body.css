@@ -1,0 +1,21 @@
+.global {
+    display:flex;
+
+}
+
+#accueil {
+    font-size: 50px;
+    border-bottom: solid  rgb(160, 157, 157);
+    padding-bottom: 40px;
+    margin:  20px 0 20px 0;
+   
+
+}
+
+section {
+    width: 70%;
+}
+aside {
+    background: rgb(122, 122, 122);
+    width: 30%;
+           }

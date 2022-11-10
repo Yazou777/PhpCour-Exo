@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-
+  
     <!-- Récupération des données
 
     Si les données HTML sont transmises avec la méthode GET, dans votre script PHP vous utilisez: $_GET ou $_REQUEST
@@ -39,5 +39,15 @@
         <input type="submit" value="OK" />
     </form> 
 
+    <!-- LA PAGE FORMULAIRE ET LE SCRIPT PEUVENT NE FAIRE QU'UN: -->
+    <form action="<?php print $_SERVER[‘PHP_SELF’] ?>"method="get">
+        <input type="text" name="zoneDeTexte" size="40" maxlength="40">
+        <input type="submit" name="btnEnvoyer" value="envoyer">
+        <input type="submit" name="delete" value="Supprimer">
+        <input type="submit" name="create" value="Créer">
+        <input type="submit" name="update" value="Modifier">
+      </form>
+
+      
 </body>
 </html>
